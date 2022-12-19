@@ -13,3 +13,13 @@
 --blue:hsl(215,100%,20%);
 font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
 }
+
+body{
+  background-color: var(--blue);
+  color: var(--white1);
+  font: 1em/1.5 sans-serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+
+}
