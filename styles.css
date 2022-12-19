@@ -23,3 +23,35 @@ body{
   place-items: center;
 
 }
+
+.gift{
+  --dur:1.5s;
+  position: relative;
+  width: 18em;
+  height: 18em;
+}
+
+.gift__bow,
+.gift__bow-center,
+.gift__bow-left,
+.gift__bow-right,
+.gift__box,
+.gift__lid,
+.gift__lid-shadow,
+.gift__star{
+  position: absolute;
+}
+
+.gift__bow-center,
+.gift__bow-left,
+.gift__bow-right{
+  background-color: var(--red2);
+}
+.gift__bow{
+  animation: bowBounce var(--dur) ease-in-out infinite;
+  bottom: 11em;
+  left: 7.5em;
+  width: 3em;
+  height: 2em;
+  transform-origin: 50% 230%;
+}
