@@ -142,4 +142,10 @@ body {
   transform: scale(0);
 }
 
+.gift__star--2,
+.gift__star--4,
+.gift__star--5 {
+  animation-name: starRotateCCW;
+}
+
 
