@@ -72,3 +72,26 @@ body {
   position: absolute;
   inset: 0;
 }
+
+.gift__bow-left {
+  animation: bowLeftPivot var(--dur) ease-in-out infinite;
+  border-radius: 1.5em 0 3em 1em / 1.5em 0 3em 3.5em;
+  right: calc(100% - 0.75em);
+  transform: rotate(35deg);
+  transform-origin: 100% 15%;
+}
+
+.gift__bow-left:before {
+  clip-path: polygon(0 42%,100% 12%,100% 100%,0 100%);
+}
+
+.gift__bow-right {
+  animation: bowRightPivot var(--dur) ease-in-out infinite;
+  border-radius: 0 1.5em 1em 3em / 0 1.5em 3.5em 3em;
+  left: calc(100% - 0.75em);
+  transform: rotate(-35deg);
+  transform-origin: 0% 15%;
+}
+.gift__bow-right:before {
+  clip-path: polygon(0 12%,100% 42%,100% 100%,0 100%);
+}
