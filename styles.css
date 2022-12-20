@@ -129,4 +129,17 @@ body {
   left: 2.5em;
 }
 
+.gift__lid-shadow {
+  animation: lidShadowBounce var(--dur) ease-in-out infinite;
+  background-color: hsla(0,0%,0%,0.1);
+  top: -1.5em;
+  left: -1em;
+}
+.gift__star {
+  animation: starRotateCW var(--dur) ease-in infinite;
+  background-color: var(--white1);
+  clip-path: polygon(50% 0,65% 35%,100% 50%,65% 65%,50% 100%,35% 65%,0 50%,35% 35%);
+  transform: scale(0);
+}
+
 
