@@ -95,3 +95,22 @@ body {
 .gift__bow-right:before {
   clip-path: polygon(0 12%,100% 42%,100% 100%,0 100%);
 }
+
+.gift__box,
+.gift__lid,
+.gift__lid-shadow {
+  transform-origin: 50% 100%;
+}
+.gift__box {
+  animation: boxBounce var(--dur) ease-in-out infinite;
+  background:
+    linear-gradient(var(--red2),var(--red2)) 50% 50% / 3.3em 100% no-repeat,
+    var(--white2);
+  border-radius: 1.5em;
+  bottom: 0.5em;
+  left: 3.3em;
+  overflow: hidden;
+  width: 11.4em;
+  height: 9em;
+}
+
