@@ -208,3 +208,40 @@ body {
     transform: translateY(0) rotate(0);
   }
 }
+
+@keyframes bowLeftPivot {
+  from,
+  50% {
+    transform: rotate(35deg);
+  }
+  62.5% {
+    transform: rotate(45deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  87.5% {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(35deg);
+  }
+}
+@keyframes bowRightPivot {
+  from,
+  50% {
+    transform: rotate(-35deg);
+  }
+  62.5% {
+    transform: rotate(-45deg);
+  }
+  75% {
+    transform: rotate(-34deg);
+  }
+  87.5% {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(-35deg);
+  }
+}
