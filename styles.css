@@ -289,3 +289,54 @@ body {
     transform: translateY(0) scale(1,1) rotate(0);
   }
 }
+
+@keyframes lidShadowBounce {
+  from,
+  50% {
+    transform: translateY(0) scale(1,1) rotate(0);
+  }
+  62.5% {
+    animation-timing-function: ease-in;
+    transform: translateY(10%) scale(1.14,0.95) rotate(0);
+  }
+  68.75% {
+    animation-timing-function: ease-out;
+    transform: translateY(-10%) scale(1.05,1.03) rotate(15deg);
+  }
+  75% {
+    animation-timing-function: ease-in-out;
+    transform: translateY(-30%) scale(0.96,1.1) rotate(5deg);
+  }
+  87.5% {
+    transform: translateY(10%) scale(1.12,0.93) rotate(-3deg);
+  }
+  to {
+    transform: translateY(0) scale(1,1) rotate(0);
+  }
+}
+@keyframes starRotateCW {
+  from {
+    transform: scale(0) rotate(0);
+  }
+  25% {
+    animation-timing-function: ease-out;
+    transform: scale(1) rotate(0.25turn);
+  }
+  50%,
+  to {
+    transform: scale(0) rotate(0.5turn);
+  }
+}
+@keyframes starRotateCCW {
+  from {
+    transform: scale(0) rotate(0);
+  }
+  25% {
+    animation-timing-function: ease-out;
+    transform: scale(1) rotate(-0.25turn);
+  }
+  50%,
+  to {
+    transform: scale(0) rotate(-0.5turn);
+  }
+}
