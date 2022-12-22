@@ -148,4 +148,63 @@ body {
   animation-name: starRotateCCW;
 }
 
+.gift__star--1 {
+  animation-delay: calc(var(--dur) * 0.5);
+  top: 0;
+  left: 12.5em;
+  width: 1.5em;
+  height: 1.5em;
+}
+.gift__star--2 {
+  animation-delay: calc(var(--dur) * 0.125);
+  top: 2em;
+  left: 10em;
+  width: 1.75em;
+  height: 1.75em;
+}
+.gift__star--3 {
+  animation-delay: calc(var(--dur) * 0.25);
+  top: 8em;
+  left: 0;
+  width: 1.25em;
+  height: 1.25em;
+}
+.gift__star--4 {
+  top: 10.5em;
+  right: 0;
+  width: 1.75em;
+  height: 1.75em;
+}
+.gift__star--5 {
+  animation-delay: calc(var(--dur) * 0.375);
+  top: 12em;
+  left: 1.8em;
+  width: 2.5em;
+  height: 2.5em;
+}
 
+/* Animations */
+@keyframes bowBounce {
+  from,
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+  62.5% {
+    animation-timing-function: ease-in;
+    transform: translateY(75%) rotate(0);
+  }
+  68.75% {
+    animation-timing-function: ease-out;
+    transform: translateY(-37.5%) rotate(15deg);
+  }
+  75% {
+    animation-timing-function: ease-in-out;
+    transform: translateY(-150%) rotate(5deg);
+  }
+  87.5% {
+    transform: translateY(65%) rotate(-3deg);
+  }
+  to {
+    transform: translateY(0) rotate(0);
+  }
+}
